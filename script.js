@@ -1,8 +1,9 @@
 const obj = document.getElementById("txtToMorse")
+const genView = document.getElementById("genMorse")
 let genString = ""
 
 function genMorse(string) {
-  genString = ""
+  genString = obj.value
   for (var i = 0; i < string.length; i++) {
     if (string.charAt(i) == "A" || string.charAt(i) == "a") {
       genString = genString + ".- "
@@ -61,5 +62,5 @@ function genMorse(string) {
     }
   }
   genString = genString.slice(0, -1)
-  console.log(genString)
+  genView.innerText = genString
 }
