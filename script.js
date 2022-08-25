@@ -58,6 +58,56 @@ function genMorse(string) {
       genString = genString + "--.. "
     } else if (string.charAt(i) == " ") {
       genString = genString + "/ "
+    } else if (string.charAt(i) == "-") {
+      genString = genString + "-....- "
+    } else if (string.charAt(i) == "/") {
+      genString = genString + "-..-. "
+    } else if (string.charAt(i) == ":") {
+      genString = genString + "---... "
+    } else if (string.charAt(i) == "(") {
+      genString = genString + "-.--. "
+    } else if (string.charAt(i) == ")") {
+      genString = genString + "-.--.- "
+    } else if (string.charAt(i) == "&") {
+      genString = genString + ".-... "
+    } else if (string.charAt(i) == "@") {
+      genString = genString + ".--.-. "
+    } else if (string.charAt(i) == '"') {
+      genString = genString + ".-..-. "
+    } else if (string.charAt(i) == ".") {
+      genString = genString + ".-.-.- "
+    } else if (string.charAt(i) == ",") {
+      genString = genString + "--..-- "
+    } else if (string.charAt(i) == "!") {
+      genString = genString + "-.-.-- "
+    } else if (string.charAt(i) == "'") {
+      genString = genString + ".----. "
+    } else if (string.charAt(i) == "+") {
+      genString = genString + ".-.-. "
+    } else if (string.charAt(i) == "=") {
+      genString = genString + "-...- "
+    } else if (string.charAt(i) == "1") {
+      genString = genString + ".---- "
+    } else if (string.charAt(i) == "2") {
+      genString = genString + "..--- "
+    } else if (string.charAt(i) == "3") {
+      genString = genString + "...-- "
+    } else if (string.charAt(i) == "4") {
+      genString = genString + "....- "
+    } else if (string.charAt(i) == "5") {
+      genString = genString + "..... "
+    } else if (string.charAt(i) == "6") {
+      genString = genString + "-.... "
+    } else if (string.charAt(i) == "7") {
+      genString = genString + "--... "
+    } else if (string.charAt(i) == "8") {
+      genString = genString + "---.. "
+    } else if (string.charAt(i) == "9") {
+      genString = genString + "----. "
+    } else if (string.charAt(i) == "0") {
+      genString = genString + "----- "
+    } else if (string.charAt(i) == "?") {
+      genString = genString + "..--.."
     }
   }
   genString = genString.slice(0, -1)
