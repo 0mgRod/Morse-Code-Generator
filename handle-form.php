@@ -28,7 +28,7 @@
                 //Do something with no reCAPTCHA available
                  echo "<p>".$submission_error." No verification data.</p>";
             } else {
-                $secret='YOUR_reCAPTCHA_SECRET_KEY_GOES_HERE';
+                $secret='6Ld9IaohAAAAAEaJwnhnYKPjHtp5VKaSUR5t93Vo';
                 //Verify with Google reCAPTCHA servers
                 //Construct query paramters
                 $query_content = http_build_query(array('secret'=>$secret,'response'=>$captcha));
