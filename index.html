@@ -10,12 +10,18 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="m-4">
-    <h1>Morse Code Generator</h1>
-    <textarea id="txtToMorse" placeholder="Type your normal text here... (morse code -> text coming soon)" defaultValue="Welcome to 0mgRod's Morse Code Generator! If you enjoy  this, please subscribe to 0mgRod on YouTube, follow him on Twitter and follow him on TikTok."></textarea>
+    <h1>Text -> Morse</h1>
+    <textarea id="txtToMorse" placeholder="Type your normal text here" value="Welcome to 0mgRod's Morse Code Generator! If you enjoy  this, please subscribe to 0mgRod on YouTube, follow him on Twitter and follow him on TikTok."></textarea>
     <br>
     <button onclick="genMorse(document.getElementById('txtToMorse').value)">Generate!</button>
-    <h2>Generated Morse Code</h2>
+    <h2>Text -> Morse Results</h2>
     <p id="genMorse">.-- . .-.. -.-. --- -- . / - --- / ----- -- --. .-. --- -.. .----. ... / -- --- .-. ... . / -.-. --- -.. . / --. . -. . .-. .- - --- .-. -.-.-- / .. ..-. / -.-- --- ..- / . -. .--- --- -.-- / / - .... .. ... --..-- / .--. .-.. . .- ... . / ... ..- -... ... -.-. .-. .. -... . / - --- / ----- -- --. .-. --- -.. / --- -. / -.-- --- ..- - ..- -... . --..-- / ..-. --- .-.. .-.. --- .-- / .... .. -- / --- -. / - .-- .. - - . .-. / .- -. -.. / ..-. --- .-.. .-.. --- .-- / .... .. -- / --- -. / - .. -.- - --- -.- .-.-.-</p>
+    <h1>Morse -> Text</h1>
+    <textarea id="morseToText" placeholder="Type your normal text here" value="Welcome to 0mgRod's Morse Code Generator! If you enjoy  this, please subscribe to 0mgRod on YouTube, follow him on Twitter and follow him on TikTok."></textarea>
+    <br>
+    <button onclick="convertToText(document.getElementById('morseToText').value)">Generate!</button>
+    <h2>Morse -> Text Results</h2>
+    <p id="genText">WELCOME TO 0MGROD'S MORSE CODE GENERATOR! IF YOU ENJOY THIS, PLEASE SUBSCRIBE TO 0MGROD ON YOUTUBE, FOLLOW HIM ON TWITTER AND FOLLOW HIM ON TIKTOK.</p>
     <script src="script.js"></script>
   </body>
 </html>
