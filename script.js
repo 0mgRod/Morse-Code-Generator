@@ -134,5 +134,6 @@ function convertToText(text) {
       }
     }
   }
+  document.getElementById("genText").innerText = text
   return result;
 }
